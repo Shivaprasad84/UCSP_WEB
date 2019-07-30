@@ -4,7 +4,7 @@ body {
   font-family: 'Lato', sans-serif;
   color: #505962;
   box-sizing: border-box;
-  zoom: 90%;
+  zoom: 100%;
 }
 
 .offset::before {
