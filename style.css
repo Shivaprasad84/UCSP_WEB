@@ -222,6 +222,115 @@ h3.heading {
 
 /* member section */
 
+.team h1
+{
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #505962;
+  padding-top: 10px;
+  padding-bottom: 10px; 
+}
+
+.profile
+{
+  margin-top: 20px;
+}
+
+.profile .img-box
+{
+  opacity: 1;
+  display: block;
+  position: relative;
+}
+
+.profile h2
+{
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.profile h3
+{
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.img-box:after
+{
+  content: '';
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0; 
+}
+
+.img-box ul
+{
+  margin: 0;
+  padding: 20px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  display: block;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+}
+
+.img-box ul li
+{
+  /* text-decoration: none; */
+  width: 35px;
+  height: 35px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  margin: 1px;
+  padding: 5px;
+  display: inline-block;  
+}
+
+.img-box a
+{
+  text-decoration: none;
+  color: #fff;
+}
+
+.img-box:hover::after
+{
+  opacity: 1;
+  cursor: pointer;
+}
+
+.img-box:hover ul
+{
+  cursor: pointer;
+  opacity: 1;
+}
+
+.img-box a .svg-inline--fa:hover
+{
+  color: #1ebba3;
+  cursor: pointer;
+}
+
+.img-box a:hover li
+{
+  color: #1ebba3;
+}
+
+.img-box:after, .img-box ul, .img-box ul li
+{
+  transition: all 0.5s ease-in-out 0s;
+}
+
+
+
+
 .clients img {
   width: 100%;
   border-radius: 50%;
@@ -299,20 +408,12 @@ h3.card-subtitle {
   font-size: 1.2rem;
 }
 
-/* .cardSet1
+.member_modal
 {
-  background-color: #aacaca;
+  padding: 34px 6px;
 }
 
-.cardSet2
-{
-  background-color: #cfb15d;
-}
 
-.cardSet3
-{
-  background-color: #8399e0;
-} */
 
 
 
